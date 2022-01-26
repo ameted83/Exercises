@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Lezione HTML</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#" method="#">
+      <h2>Registrazione</h2>
+      <!--anagrafica-->
+      <div>
+        <label for="name">Nome e Cognome</label>
+        <input type="text" id="name" />
+        <label for="date">Data di nascita</label>
+        <input type="date" name="date" id="date" />
+        <label for="number">Numero di telefono</label>
+        <input type="number" id="number" />
+        <label for="email">E-mail</label>
+        <input type="email" name="usermail" id="eamil" />
+        <label for="keyword">Password</label>
+        <input type="password" name="password" id="keyword" />
+      </div>
+      <!--scelta piano di abbonamento-->
+      <div>
+        <label for="plan">Piani di abbonamento:</label>
+        <select name="subscription plan" id="plan">
+          <option value="piano free">Piano Free</option>
+          <optgroup label="Piani a pagamento:">
+            <option value="piano base">Piano Base</option>
+            <option value="piano medium">Piano Medium</option>
+            <option value="piano gold">Piano Gold</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="pro">Vantaggi PRO</label>
+        <input type="checkbox" name="vantaggi PRO" id="pro" />
+      </div>
+      <!--dati carta di credito-->
+      <div>
+        <label for="number">Numero Carta di credito</label>
+        <input type="text" id="number" />
+        <label for="cvc">CVC</label>
+        <input type="number" id="cvc" />
+        <label for="date">Scadenza</label>
+        <input type="date" name="date" id="date" />
+      </div>
+      <!--indirizzo di fatturazione-->
+      <div>
+        <label for="address">Indirizzo di fatturazione</label>
+        <input type="text" id="address" />
+      </div>
+    </form>
+  </body>
+</html>
