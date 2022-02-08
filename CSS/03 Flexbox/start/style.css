@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.logo{
+    height: 80px;
+    background-color: rgb(193, 192, 194);
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(155, 161, 168);
+    padding: 13px;
+}
+
+.avatar{
+    background-color: rgb(85, 83, 81);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img{
+    width: 37px;
+    margin:7px ;
+}
+
+a{
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #2b2bb2;
+    transition-duration: 0.3s;
+}
+
+p{
+    font-weight: bold; 
+}
+

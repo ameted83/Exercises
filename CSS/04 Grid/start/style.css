@@ -1,0 +1,84 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    "zero zero zero zero"
+    "operation operation operation operation"
+    "number1 number1 number1 section"
+    "number2 number2 number2 section"
+    "number3 number3 number3 section"
+    "number4 number4 number4 section";
+    width: 200px;
+    height: 200px;
+} 
+
+.zero{
+    grid-area: zero;
+    background-color: rgb(83, 80, 87);
+    color: white;
+    text-align: right;
+    padding: 5px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.operation{
+    grid-area: operation;
+    background-color: rgb(194, 212, 219);
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(97, 142, 240) ;
+}
+
+.number1{
+    grid-area: number1;
+    display: flex;
+    background-color: rgb(225, 235, 238);
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(97, 142, 240) ;
+    border-right: 1px solid rgb(97, 142, 240) ;
+}
+
+.number2{
+    grid-area: number2;
+    background-color: rgb(225, 235, 238);
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(97, 142, 240) ;
+    border-right: 1px solid rgb(97, 142, 240) ;
+}
+
+.number3{
+    grid-area: number3;
+    background-color: rgb(225, 235, 238);
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(97, 142, 240) ;
+    border-right: 1px solid rgb(97, 142, 240) ;
+}
+
+.number4{
+    grid-area: number4;
+    background-color: rgb(225, 235, 238);
+    display: flex;
+    justify-content: space-around;
+    border-bottom-left-radius: 10px;
+    border-bottom: 1px solid rgb(97, 142, 240) ;
+    border-right: 1px solid rgb(97, 142, 240) ;
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(252, 127, 148);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+}
+
+
+span{
+  font-weight: bold;
+}
+
