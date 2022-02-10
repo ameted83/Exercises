@@ -12,6 +12,10 @@ body {
 	color: white;
 }
 
+.label-text::before {
+	content: 'Mostra Righe';
+}
+
 #expand-btn {
 	display: inline-block;
 	margin-top: 12px;
@@ -22,15 +26,13 @@ body {
 	transition: 0.3s;
 } 
 
-#expand-toggle:checked ~ table tbody tr.expandable{
-	visibility: visible;
+#expand-toggle:checked  ~ table .expandable {
+	visibility: initial;
 }
 
-#expand-toggle:checked ~ label[for="expand-toggle"]:before{
+#expand-toggle:checked ~ #expand-btn {
 	background-color: #88ff88;
-	content: "Nascondi righe";
 }
-
-#expand-btn:checked * span {
-	visibility: none;
+#expand-toggle:checked ~ .label-text::before {
+	content: 'Nascondi Righe';
 }
