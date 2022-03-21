@@ -1,6 +1,6 @@
 function getKeys(obj) {
   let newArr = [];
-  for (let prop in person) {
+  for (let prop in obj) {
     newArr.push(prop);
   }
   return newArr;
