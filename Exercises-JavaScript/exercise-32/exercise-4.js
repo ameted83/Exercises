@@ -1,5 +1,7 @@
 function uncompletedNotes(notes) {
-  return notes.some((todos) => todos.done === false);
+  return notes.filter((note) => {
+    return note.todos.some((todo) => todo.done === false);
+  });
 }
 
 const notes = [

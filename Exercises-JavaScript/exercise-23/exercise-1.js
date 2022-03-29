@@ -4,4 +4,6 @@ const person = {
   age: 25,
 };
 
-console.log(Object.keys(person));
+Object.entries(person).forEach(([key, value]) =>
+  console.log(`${key}: ${value}`)
+);
