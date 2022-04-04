@@ -3,8 +3,8 @@ class Person {
     this.firstName = firstName;
     this.lastName = lastName;
   }
-  static fromObject() {
-    return new Object(obj);
+  static fromObject(obj) {
+    return new Person(obj.firstName, obj.lastName);
   }
 }
 

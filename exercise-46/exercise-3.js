@@ -1,10 +1,5 @@
-function isAdult({
-  id = 1,
-  firstName = "Mario",
-  lastName = "Rossi",
-  age = 25,
-}) {
-  return person.age >= 18;
+function isAdult({ age }) {
+  return age >= 18;
 }
 
 const person = {
