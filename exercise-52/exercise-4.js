@@ -5,6 +5,15 @@ const person = {
   age: 25,
 };
 
-const json = JSON.stringify(person, ["id", "age"]);
+for (let i = 0; i < person.length; i++) {
+  const item = person[index];
+  if (item === number) {
+    const json = JSON.stringify(person, ["id", "age"]);
+  } else {
+    console.log("Sono stringa");
+  }
+}
+
+// const json = JSON.stringify(person, ["id", "age"]);
 
 console.log(json); // Should return: { id: 1, age: 25 }
