@@ -11,9 +11,8 @@
 </html>
 
 <script>
-  const postTitle = document.getElementById("fetch-post");
-  postTitle.addEventListener("click", () => {
-    const post = JSON.parse(localStorage.getItem("response"));
-    document.getElementById("post-title").innerHTML = post.title;
+  document.getElementById("fetch-post").addEventListener("click", () => {
+    let returnPost = JSON.parse(localStorage.getItem("response"));
+    document.getElementById("post-title").innerHTML = returnPost.title;
   });
 </script>
