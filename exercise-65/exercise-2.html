@@ -15,8 +15,8 @@
   const postTitle = document.getElementById("post-title");
 
   fetchPost.addEventListener("click", () => {
-    let post = JSON.parse(localStorage.getItem("response"));
-    //console.log(post);
+    let post = JSON.parse(localStorage.getItem("key"));
+    console.log(post);
     postTitle.innerHTML = post.title;
   });
 </script>
